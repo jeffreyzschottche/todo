@@ -1,0 +1,146 @@
+body{
+    overflow-x: hidden;
+}
+.typewriter-wrapping {
+  height: 60px;
+  text-align: center;
+}
+
+.inputToDo {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputToDo input {
+  height: 40px;
+}
+
+.inputToDo button {
+  margin-top: 1em;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  cursor: pointer;
+}
+
+.todos-wrapper {
+  /* width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex;
+  flex-direction: column; */
+ /* background: blue; */
+ width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.todos {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.todos li {
+  text-align: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin-left: -2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+
+.todos li button{
+    text-align: right;
+    font-weight: bold;
+    background: none;
+    color: red;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* moving background effect */
+
+.gradient-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }    
+  }
+
+      /* Button spark effect */
+      .inputToDo button:active {
+        animation: sparks 0.5s linear;
+      }
+
+  @keyframes sparks {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+      transform: scale(1.35);
+      box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+
+/* Meme CSS */
+.meme {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: float 5s linear infinite;
+    width: 30%;
+    height: 20%;
+}
+  
+  @keyframes float {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 70%;
+    }
+    100% {
+      left: 0;
+    }
+  }
